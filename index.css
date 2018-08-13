@@ -1,0 +1,132 @@
+/*PAGE TITLE*/
+.title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    color: #4d94ff;
+    font-size: 26px;
+    margin-top: 50px;
+    
+}
+/*END PAGE TITLE*/
+
+
+
+
+/* NAVIGATION BAR*/
+    /*font*/
+ul {
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #4d94ff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+    /*formatting, spacing, color*/
+.active {
+    color: #4d94ff;
+}
+
+li {
+    float: inherit;
+    /*to make navbar stick to top*/
+    position: sticky;
+}
+
+li a {
+    display:block;
+    color: dimgrey;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: none;
+    color: #4d94ff;
+}
+
+/*END NAVIGATION BAR*/
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #fff;
+    /*background:#ECECEC; off-white*/
+
+}
+
+
+
+
+
+/*THE GRID*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+
+.square {
+    float:left;
+    position: relative;
+    width: 24%;
+    padding-bottom: 24%; /* = width for a 1:1 aspect ratio */
+    margin:0.5%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+    
+}
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    text-align:center;
+    
+}
+
+/*  For responsive images */
+
+.rs{
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+}
+/*  For responsive images as background */
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+
+}
+
+.img1{
+    background-image: url(test.jpg);
+}
+.img2{
+    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
+}
+.img3{
+    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
+}
+
+.numbers{
+    font-weight:900;
+    font-size:100px;
+}
